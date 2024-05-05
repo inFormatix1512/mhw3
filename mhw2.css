@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif; /* Imposta il font di tutto il documento */
+    margin: 0; /* Rimuove il margine di default del body */
+    padding: 0; /* Rimuove il padding di default del body */
+}
+
+header nav {
+    display: flex; /* Rende la navigazione un contenitore flessibile */
+    align-items: center; /* Allinea verticalmente gli elementi al centro */
+    background-color: #333; /* Colore di sfondo della navigazione */
+    padding: 10px; /* Aggiunge un piccolo padding all'interno della navigazione */
+}
+
+header nav .logo {
+    height: 50px; /* Imposta l'altezza dell'immagine del logo */
+    margin-right: 20px; /* Aggiunge un margine destro al logo */
+}
+
+header nav ul {
+    list-style-type: none; /* Rimuove i punti elenco dai link di navigazione */
+    margin: 0; /* Rimuove il margine di default della lista */
+    padding: 0; /* Rimuove il padding di default della lista */
+    overflow: hidden; /* Nasconde eventuali elementi che fuoriescono dalla navigazione */
+}
+
+header nav ul li {
+    float: left; /* Dispone gli elementi della lista orizzontalmente */
+}
+
+header nav ul li a {
+    display: block; /* Rende i link elementi a blocco */
+    color: white; /* Colore dei link di navigazione */
+    text-align: center; /* Centra il testo dei link */
+    padding: 14px 16px; /* Aggiunge un po' di padding ai link */
+    text-decoration: none; /* Rimuove la sottolineatura dai link */
+}
+
+header nav ul li a:hover {
+    background-color: #ddd; /* Cambia il colore di sfondo dei link quando il mouse ci passa sopra */
+    color: #333; /* Cambia il colore del testo dei link quando il mouse ci passa sopra */
+}
+
+main {
+    text-align: center; /* Centra il testo all'interno della sezione principale */
+    padding: 50px; /* Aggiunge un po' di padding all'interno della sezione principale */
+    position: relative; /* Posizione relativa per posizionare l'immagine di sfondo */
+}
+
+main h1 {
+    font-size: 36px; /* Dimensione del font per il titolo principale */
+    margin-bottom: 10px; /* Margine inferiore per separare il titolo dal sottotitolo */
+}
+
+main h2 {
+    font-size: 24px; /* Dimensione del font per il sottotitolo */
+    margin-bottom: 30px; /* Margine inferiore per separare il sottotitolo dal pulsante */
+}
+
+.btn {
+    display: inline-block; /* Rende il pulsante un elemento in linea */
+    background-color: #333; /* Colore di sfondo del pulsante */
+    color: white; /* Colore del testo del pulsante */
+    padding: 10px 20px; /* Padding del pulsante */
+    text-decoration: none; /* Rimuove la sottolineatura dal pulsante */
+    border-radius: 5px; /* Aggiunge un leggero raggio ai bordi del pulsante */
+}
+
+.bg-image {
+    position: absolute; /* Posizione assoluta per posizionare l'immagine di sfondo */
+    top: 0; /* Allinea l'immagine al bordo superiore della sezione principale */
+    left: 0; /* Allinea l'immagine al bordo sinistro della sezione principale */
+    width: 100%; /* Fa in modo che l'immagine copra tutta la larghezza della sezione principale */
+    height: 100%; /* Fa in modo che l'immagine copra tutta l'altezza della sezione principale */
+    object-fit: cover; /* Ridimensiona l'immagine per coprire l'intera area mantenendo le proporzioni */
+    z-index: -1; /* Posiziona l'immagine dietro il contenuto della sezione principale */
+}
+
+.image-container {
+    display: flex; /* Rende il contenitore un contenitore flessibile */
+    justify-content: center; /* Centra orizzontalmente gli elementi all'interno del contenitore */
+    margin-top: 50px; /* Aggiunge un margine superiore al contenitore */
+}
+
+.image-box {
+    margin: 0 20px; /* Margine orizzontale tra le immagini */
+    text-align: center; /* Centra il testo all'interno delle scatole delle immagini */
+    flex: 1; /* Permette alle scatole delle immagini di avere la stessa larghezza */
+    max-width: 300px; /* Limita la larghezza massima delle scatole delle immagini */
+}
+
+.image-box img {
+    width: 100%; /* Fa in modo che le immagini occupino tutta la larghezza delle scatole */
+    height: auto; /* Mantiene le proporzioni delle immagini */
+}
+
+footer {
+    background-color: #333; /* Colore di sfondo del piè di pagina */
+    color: white; /* Colore del testo del piè di pagina */
+    text-align: center; /* Centra il testo all'interno del piè di pagina */
+    padding: 20px; /* Padding all'interno del piè di pagina */
+}
+
+/*Imposta la dimensione delle immagini nel contenitore con la stessa grande*/
+.image-container img {
+    width: 300px; /* Imposta la larghezza */
+    height: 200px; /* Imposta l'altezza */
+    object-fit: cover; /* Mantiene le proporzioni dell'immagine */
+}
